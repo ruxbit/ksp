@@ -35,7 +35,7 @@ publishing {
             artifact(sourceJar)
             artifact(dokkaJavadocJar)
             pom {
-                name.set("com.google.devtools.ksp:symbol-processing-api")
+                name.set("io.github.ruxbit.ksp:symbol-processing-api")
                 description.set("Symbol processing for Kotlin")
             }
         }

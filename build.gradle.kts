@@ -32,7 +32,7 @@ plugins {
 }
 
 nexusPublishing {
-    packageGroup.set("com.google.devtools.ksp")
+    packageGroup.set("io.github.ruxbit.ksp")
     repositories {
         sonatype {
             username.set(sonatypeUserName)
@@ -47,7 +47,7 @@ version = rootProject.extra.get("kspVersion") as String
 
 configureKtlintApplyToIdea()
 subprojects {
-    group = "com.google.devtools.ksp"
+    group = "io.github.ruxbit.ksp"
     version = rootProject.extra.get("kspVersion") as String
     configureKtlint()
     repositories {

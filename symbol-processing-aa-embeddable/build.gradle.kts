@@ -240,7 +240,7 @@ publishing {
             artifact(sourcesJar)
             artifact(tasks.shadowJar)
             pom {
-                name.set("com.google.devtools.ksp:symbol-processing-aa-embeddable")
+                name.set("io.github.ruxbit.ksp:symbol-processing-aa-embeddable")
                 description.set("KSP implementation on Kotlin Analysis API")
                 withXml {
                     fun groovy.util.Node.addDependency(
@@ -260,8 +260,8 @@ publishing {
                     asNode().appendNode("dependencies").apply {
                         addDependency("org.jetbrains.kotlin", "kotlin-stdlib", kotlinBaseVersion)
                         addDependency("org.jetbrains.kotlinx", "kotlinx-coroutines-core-jvm", aaCoroutinesVersion)
-                        addDependency("com.google.devtools.ksp", "symbol-processing-api", version)
-                        addDependency("com.google.devtools.ksp", "symbol-processing-common-deps", version)
+                        addDependency("io.github.ruxbit.ksp", "symbol-processing-api", version)
+                        addDependency("io.github.ruxbit.ksp", "symbol-processing-common-deps", version)
                     }
                 }
             }

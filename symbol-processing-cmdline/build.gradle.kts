@@ -52,7 +52,7 @@ publishing {
             artifact(sourcesJar)
             artifact(tasks.shadowJar)
             pom {
-                name.set("com.google.devtools.ksp:symbol-processing-cmdline")
+                name.set("io.github.ruxbit.ksp:symbol-processing-cmdline")
                 description.set("Symbol processing for K/N and command line")
                 withXml {
                     fun groovy.util.Node.addDependency(
@@ -72,7 +72,7 @@ publishing {
                     asNode().appendNode("dependencies").apply {
                         addDependency("org.jetbrains.kotlin", "kotlin-stdlib", kotlinBaseVersion)
                         addDependency("org.jetbrains.kotlinx", "kotlinx-serialization-json", "1.6.3")
-                        addDependency("com.google.devtools.ksp", "symbol-processing-api", version)
+                        addDependency("io.github.ruxbit.ksp", "symbol-processing-api", version)
                     }
                 }
             }

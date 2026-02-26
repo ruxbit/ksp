@@ -58,8 +58,8 @@ tasks.named("validatePlugins").configure {
 gradlePlugin {
     plugins {
         create("symbol-processing-gradle-plugin") {
-            id = "com.google.devtools.ksp"
-            displayName = "com.google.devtools.ksp.gradle.plugin"
+            id = "io.github.ruxbit.ksp"
+            displayName = "io.github.ruxbit.ksp.gradle.plugin"
             implementationClass = "com.google.devtools.ksp.gradle.KspGradleSubplugin"
             description = "Kotlin symbol processing integration for Gradle"
         }

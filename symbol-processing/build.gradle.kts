@@ -53,7 +53,7 @@ publishing {
             artifact(sourcesJar)
             artifact(tasks["shadowJar"])
             pom {
-                name.set("com.google.devtools.ksp:symbol-processing")
+                name.set("io.github.ruxbit.ksp:symbol-processing")
                 description.set("Symbol processing for Kotlin")
                 // FIXME: figure out how to make ShadowJar generate dependencies in POM,
                 //        or simply depends on kotlin-compiler-embeddable so that relocation
@@ -76,7 +76,7 @@ publishing {
                     asNode().appendNode("dependencies").apply {
                         addDependency("org.jetbrains.kotlin", "kotlin-stdlib", kotlinBaseVersion)
                         addDependency("org.jetbrains.kotlinx", "kotlinx-serialization-json", "1.6.3")
-                        addDependency("com.google.devtools.ksp", "symbol-processing-api", version)
+                        addDependency("io.github.ruxbit.ksp", "symbol-processing-api", version)
                     }
                 }
             }

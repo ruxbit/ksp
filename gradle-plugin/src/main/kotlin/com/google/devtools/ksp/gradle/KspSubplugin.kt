@@ -82,11 +82,11 @@ import javax.inject.Inject
 class KspGradleSubplugin @Inject internal constructor(private val registry: ToolingModelBuilderRegistry) :
     KotlinCompilerPluginSupportPlugin {
     companion object {
-        const val KSP_PLUGIN_ID = "com.google.devtools.ksp.symbol-processing"
+        const val KSP_PLUGIN_ID = "io.github.ruxbit.ksp.symbol-processing"
         const val KSP_API_ID = "symbol-processing-api"
         const val KSP_COMPILER_PLUGIN_ID = "symbol-processing"
         const val KSP_COMPILER_PLUGIN_ID_NON_EMBEDDABLE = "symbol-processing-cmdline"
-        const val KSP_GROUP_ID = "com.google.devtools.ksp"
+        const val KSP_GROUP_ID = "io.github.ruxbit.ksp"
         const val KSP_PLUGIN_CLASSPATH_CONFIGURATION_NAME = "kspPluginClasspath"
         const val KSP_PLUGIN_CLASSPATH_CONFIGURATION_NAME_NON_EMBEDDABLE = "kspPluginClasspathNonEmbeddable"
 

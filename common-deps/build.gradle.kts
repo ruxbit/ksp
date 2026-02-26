@@ -44,7 +44,7 @@ publishing {
             artifact(sourcesJar)
             artifact(dokkaJavadocJar)
             pom {
-                name.set("com.google.devtools.ksp:symbol-processing-common-deps")
+                name.set("io.github.ruxbit.ksp:symbol-processing-common-deps")
                 description.set("Kotlin Symbol processing Gradle Utils")
             }
         }
